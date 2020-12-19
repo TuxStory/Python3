@@ -12,7 +12,7 @@ caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRST*$?!%@|&â‚
 nommbre = int(input("Nombre de mot de passe ? :"))
 longeur = int(input("Longueur du mot de passe ? :"))
 
-print("Voici les mots de passe : ")
+print("Voici le(s) mot(s) de passe : ")
 
 for mdp in range(nommbre):
     motdepasse = ""
