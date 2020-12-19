@@ -1,4 +1,5 @@
-#/bin/python3
+#!/bin/python3
+
 import random
 import os
 #Test Pour Raspberry Pi
@@ -9,8 +10,8 @@ print('''
 ''')
 
 caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRST*$?!%@|&€$'
-nommbre = int(input("Nombre de mot de passe ? :"))
-longeur = int(input("Longueur du mot de passe ? :"))
+nommbre = int(input("Nombre de mot de passe ? : "))
+longeur = int(input("Longueur du mot de passe ? : "))
 
 print("Voici le(s) mot(s) de passe : ")
 

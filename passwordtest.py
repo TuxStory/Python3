@@ -12,7 +12,7 @@ def verify():
         pswd = str(pswd).encode("utf-8")
         mdp.update(pswd)
         if mdp.hexdigest() == password:
-            print("Weldcome!")
+            print("Welcome!")
             return True
         elif mdp.hexdigest() != password:
             print("Wrong password !")
