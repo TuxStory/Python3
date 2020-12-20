@@ -9,7 +9,7 @@ print('''
 ==== Générateur de mot de passe ====
 ''')
 
-caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRST*$?!%@|&€$'
+caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRST*$?!%#@|&€$'
 nommbre = int(input("Nombre de mot de passe ? : "))
 longeur = int(input("Longueur du mot de passe ? : "))
 
