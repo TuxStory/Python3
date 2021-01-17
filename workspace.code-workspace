@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../Bashscripts"
+		},
+		{
+			"path": "../LPIC_Notes"
 		}
 	],
 	"settings": {}
