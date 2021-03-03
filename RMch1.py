@@ -3,10 +3,19 @@ import os, requests
 
 result = []
 url = "http://challenge01.root-me.org/programmation/ch1/"
-os.system("wget -O index.html "+url)
 
-PAGE = open("index.html","r")
-soup = BeautifulSoup(PAGE, 'html.parser')
+#os.system("wget -O index.html "+url)
+#test en python et non bash wget
+headers = {
+    'User-Agent': 'Firefox',
+    'Content-Type': 'text/html',
+}
+
+response = requests.get(url, headers=headers)
+html = response.text
+
+#PAGE = open("index.html","r")
+soup = BeautifulSoup(html, 'html.parser')
 
 for link in soup.find_all('sub'):
     text = link.getText()
