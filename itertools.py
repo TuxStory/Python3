@@ -20,3 +20,11 @@ print (list(itertools.accumulate(data)))
 #print (list(itertools.accumulate(data, operator.mul)))     # running product
 print (list(itertools.accumulate(data, max)))              # running maximum
 
+#permutation
+print (list(itertools.permutations(['g', 'e', 'k'])))
+antoine = (list(itertools.permutations(['a', 'n', 't', 'o', 'i', 'n', 'e'])))
+cathia =  (list(itertools.permutations(['c', 'a', 't', 'h', 'i', 'a'])))
+
+for element in cathia:
+    print (element)
+print (len(cathia))
