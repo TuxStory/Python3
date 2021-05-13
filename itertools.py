@@ -28,3 +28,7 @@ cathia =  (list(itertools.permutations(['c', 'a', 't', 'h', 'i', 'a'])))
 for element in cathia:
     print (element)
 print (len(cathia))
+
+for element in antoine:
+    print (element)
+print (len(antoine))
