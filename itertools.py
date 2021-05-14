@@ -1,4 +1,7 @@
 #TEST
+#Offre plein de fonctions pratiques qui permettent de faciliter le travail sur les
+#séquences (liste, tuples, chaînes).
+#Pour enchaîner plusieurs itérables (ça peut être des listes, des strings, ...) :
 
 import itertools
 
@@ -38,3 +41,17 @@ print ("==== chiffre ===")
 y=[6,7,4,3]
 print(list(itertools.permutations(y, 4)))
 print ("Nb Combinaison :",len(list(itertools.permutations(y, 4))))
+
+#chain
+for x in itertools.chain([1, 2, 3], [4, 5], [6, 7]):
+    print(x)
+
+#Fonction product qui renvoie le produit cartésien :
+print (">>> Product")
+for x in itertools.product(['a', 'b', 'c'], ['A', 'B']):
+    print(x)
+
+#Fonction compress qui sélectionne seulement les éléments
+#du premier itérable pour lesquels l'élément correspondant du 2ème itérable est vrai :
+for x in itertools.compress(['A', 'B', 'C', 'D'], [1, 0, 1, 0]):
+    print(x)
