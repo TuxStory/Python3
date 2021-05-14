@@ -32,3 +32,9 @@ print (len(cathia))
 for element in antoine:
     print (element)
 print (len(antoine))
+
+#combinaison
+print ("==== chiffre ===")
+y=[6,7,4,3]
+print(list(itertools.permutations(y, 4)))
+print ("Nb Combinaison :",len(list(itertools.permutations(y, 4))))
