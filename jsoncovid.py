@@ -1,11 +1,16 @@
 import json
+import urllib.request
 
 Total = 0
 
+#Downloading file
+print('Beginning file download with urllib2...')
+url = 'https://epistat.sciensano.be/Data/COVID19BE_MORT.json'
+urllib.request.urlretrieve(url, 'COVID19BE_MORT.json')
+
+#Read file
 with open('COVID19BE_MORT.json') as f:
   data = json.load(f)
-
-#print(data)
 
 # Iterating through the json list
 for i in data:
