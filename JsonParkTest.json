@@ -1,0 +1,39 @@
+{"Pc": [
+    {"ID":"0001",
+    "Nom":"PC01",
+    "Model":"Acer",
+    "Processeur":"Intel Atom",
+    "IP" : "10.0.0.1",
+    "Disques": [
+      { "Model":"WD Blue",
+        "Serie":"000",
+        "Partition": [
+            { "Nom":"sda1" },
+            { "Nom":"sda2" },
+	    { "Nom":"sda3" }
+        ]}
+    ]},
+    {
+    "ID":"0002",
+    "Nom":"PC02",
+    "Model":"Lenovo",
+    "Processeur":"Intel I5",
+    "IP" : "10.0.0.2",
+    "Disques": [
+      { "Model":"WD Blue",
+        "Serie":"002"
+      }
+    ]},
+    {
+    "ID":"0003",
+    "Nom":"PC03",
+    "Model":"HP",
+    "Processeur":"AMD FX",
+    "IP" : "10.0.0.3",
+    "Disques": [
+      { "Model":"WD Blue",
+        "Serie":"003"
+      }
+    ]},
+ ]
+}
