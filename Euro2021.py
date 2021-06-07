@@ -18,14 +18,24 @@ TabF={GF[0]:0,GF[1]:0,GF[2]:0,GF[3]:0}
 TabFinale=[]
 
 
+def affiche(Tab):
+    for Equipe,Score in Tab.items():
+        print(Equipe," : ",Score)
+
 #Affichage
 print ("="*30)
-
-for Equipe,Score in TabA.items():
-    print(Equipe," : ",Score)
-
+affiche(TabA)
 print ("="*30)
-
+affiche(TabB)
+print ("="*30)
+affiche(TabC)
+print ("="*30)
+affiche(TabD)
+print ("="*30)
+affiche(TabE)
+print ("="*30)
+affiche(TabF)
+print ("="*30)
 
 ######################################################"
 #>>> dict(sorted(x.items(), key=lambda item: item[1]))
