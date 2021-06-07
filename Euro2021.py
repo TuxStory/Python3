@@ -23,7 +23,6 @@ def affiche(Tab):
         print(Equipe," : ",Score)
 
 #Affichage
-print ("="*30)
 affiche(TabA)
 print ("="*30)
 affiche(TabB)
@@ -35,7 +34,6 @@ print ("="*30)
 affiche(TabE)
 print ("="*30)
 affiche(TabF)
-print ("="*30)
 
 ######################################################"
 #>>> dict(sorted(x.items(), key=lambda item: item[1]))
