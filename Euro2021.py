@@ -17,7 +17,6 @@ TabF={GF[0]:0,GF[1]:0,GF[2]:0,GF[3]:0}
 #Phase Finale
 TabFinale=[]
 
-
 def affiche(Tab):
     for Equipe,Score in Tab.items():
         print(Equipe," : ",Score)
