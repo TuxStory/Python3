@@ -7,12 +7,26 @@ GE=["Plogne","Espagne","Suède","Slovaquie"]
 GF=["France","Allemagne","Portugal","Hongrie"]
 
 #Score
-ScoreA=[0,0,0,0]
-ScoreB=[0,0,0,0]
-ScoreC=[]
-ScoreD=[]
-ScoreE=[]
-ScoreF=[]
+TabA={GA[0]:0,GA[1]:0,GA[2]:0,GA[3]:0}
+TabB={GB[0]:0,GB[1]:0,GB[2]:0,GB[3]:0}
+TabC={GC[0]:0,GC[1]:0,GC[2]:0,GC[3]:0}
+TabD={GD[0]:0,GD[1]:0,GD[2]:0,GD[3]:0}
+TabE={GE[0]:0,GE[1]:0,GE[2]:0,GE[3]:0}
+TabF={GF[0]:0,GF[1]:0,GF[2]:0,GF[3]:0}
 
-print(GB[0])
-#need to think
+#Phase Finale
+TabFinale=[]
+
+
+#Affichage
+print ("="*30)
+
+for Equipe,Score in TabA.items():
+    print(Equipe," : ",Score)
+
+print ("="*30)
+
+
+######################################################"
+#>>> dict(sorted(x.items(), key=lambda item: item[1]))
+#{0: 0, 2: 1, 1: 2, 4: 3, 3: 4}
