@@ -1,5 +1,8 @@
+def trier(Tab):
+    Tri = dict(sorted(Tab.items(), key=lambda item: item[1], reverse=True))
+    return Tri
 
-def affiche(Tab):
+def afficher(Tab):
     for Equipe,Score in Tab.items():
         print(Equipe," : ",Score)
 
@@ -25,17 +28,17 @@ def main():
     TabFinale=[]
 
     #Affichage
-    affiche(dict(sorted(TabA.items(), key=lambda item: item[1], reverse=True)))
+    Tab_A = trier(TabA) ; afficher(Tab_A)
     print ("="*30)
-    affiche(dict(sorted(TabB.items(), key=lambda item: item[1], reverse=True)))
+    Tab_B = trier(TabB) ; afficher(Tab_B)
     print ("="*30)
-    affiche(dict(sorted(TabC.items(), key=lambda item: item[1], reverse=True)))
+    Tab_C = trier(TabC) ; afficher(Tab_C)
     print ("="*30)
-    affiche(dict(sorted(TabD.items(), key=lambda item: item[1], reverse=True)))
+    Tab_D = trier(TabD) ; afficher(Tab_D)
     print ("="*30)
-    affiche(dict(sorted(TabE.items(), key=lambda item: item[1], reverse=True)))
+    Tab_E = trier(TabE) ; afficher(Tab_E)
     print ("="*30)
-    affiche(dict(sorted(TabF.items(), key=lambda item: item[1], reverse=True)))
+    Tab_F = trier(TabF) ; afficher(Tab_F)
 
 if __name__=="__main__":
     main()
