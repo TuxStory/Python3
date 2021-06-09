@@ -25,17 +25,17 @@ def main():
     TabFinale=[]
 
     #Affichage
-    affiche(TabA)
+    affiche(dict(sorted(TabA.items(), key=lambda item: item[1], reverse=True)))
     print ("="*30)
-    affiche(TabB)
+    affiche(dict(sorted(TabB.items(), key=lambda item: item[1], reverse=True)))
     print ("="*30)
-    affiche(TabC)
+    affiche(dict(sorted(TabC.items(), key=lambda item: item[1], reverse=True)))
     print ("="*30)
-    affiche(TabD)
+    affiche(dict(sorted(TabD.items(), key=lambda item: item[1], reverse=True)))
     print ("="*30)
-    affiche(TabE)
+    affiche(dict(sorted(TabE.items(), key=lambda item: item[1], reverse=True)))
     print ("="*30)
-    affiche(TabF)
+    affiche(dict(sorted(TabF.items(), key=lambda item: item[1], reverse=True)))
 
 if __name__=="__main__":
     main()
