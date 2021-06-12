@@ -18,7 +18,7 @@ def main():
 
     #Score
     TabA={GA[0]:3,GA[1]:0,GA[2]:1,GA[3]:1}
-    TabB={GB[0]:0,GB[1]:0,GB[2]:0,GB[3]:0}
+    TabB={GB[0]:3,GB[1]:0,GB[2]:3,GB[3]:0}
     TabC={GC[0]:0,GC[1]:0,GC[2]:0,GC[3]:0}
     TabD={GD[0]:0,GD[1]:0,GD[2]:0,GD[3]:0}
     TabE={GE[0]:0,GE[1]:0,GE[2]:0,GE[3]:0}
