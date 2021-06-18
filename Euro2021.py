@@ -6,6 +6,12 @@ def afficher(Tab):
     for Equipe,Score in Tab.items():
         print(Equipe," : ",Score)
 
+def Tableau(Tab):
+    Tab2=[]
+    for Equipe in Tab:
+        Tab2.append(Equipe[0])
+    return Tab2
+
 def main():
 
     #Groupe
@@ -19,9 +25,9 @@ def main():
     #Score
     TabA={GA[0]:6,GA[1]:1,GA[2]:0,GA[3]:4}
     TabB={GB[0]:6,GB[1]:0,GB[2]:3,GB[3]:3}
-    TabC={GC[0]:3,GC[1]:3,GC[2]:0,GC[3]:0}
-    TabD={GD[0]:3,GD[1]:0,GD[2]:3,GD[3]:0}
-    TabE={GE[0]:0,GE[1]:1,GE[2]:1,GE[3]:3}
+    TabC={GC[0]:3,GC[1]:6,GC[2]:3,GC[3]:0}
+    TabD={GD[0]:4,GD[1]:0,GD[2]:3,GD[3]:1}
+    TabE={GE[0]:0,GE[1]:1,GE[2]:4,GE[3]:3}
     TabF={GF[0]:3,GF[1]:0,GF[2]:3,GF[3]:0}
 
     #Phase Finale
@@ -52,6 +58,9 @@ def main():
     TabFinal.append(list(Tab_F.items())[2])
     print ()
     print (TabFinal)
+    #Phase Finale
+    PhaseFinale = Tableau(TabFinal)
+    print (PhaseFinale)
 
 if __name__=="__main__":
     main()
