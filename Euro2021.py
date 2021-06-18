@@ -53,11 +53,13 @@ def main():
     TabFinal.extend((list(Tab_D.items())[0], list(Tab_D.items())[1]))
     TabFinal.extend((list(Tab_E.items())[0], list(Tab_E.items())[1]))
     TabFinal.extend((list(Tab_F.items())[0], list(Tab_F.items())[1]))
+
     #3eme
     TabFinal.append(list(Tab_A.items())[2])
     TabFinal.append(list(Tab_F.items())[2])
     print ()
     print (TabFinal)
+
     #Phase Finale
     PhaseFinale = Tableau(TabFinal)
     print (PhaseFinale)
