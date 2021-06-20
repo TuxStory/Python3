@@ -15,7 +15,7 @@ def Tableau(Tab):
 def main():
 
     #Groupe
-    GA=["Italie","Suisse","Turquie","Pays de Galles"]
+    GA=["Italie","Pays de Galles","Turquie","Suisse"]
     GB=["Belgique","Danemark","Finlande","Russie"]
     GC=["Autriche","Pays-Bas","Ukraine","Macédoine du Nord"]
     GD=["Angleterre","Croatie","Rep. Tchèque","Ecosse"]
@@ -23,7 +23,7 @@ def main():
     GF=["France","Allemagne","Portugal","Hongrie"]
 
     #Score
-    TabA={GA[0]:6,GA[1]:1,GA[2]:0,GA[3]:4}
+    TabA={GA[0]:9,GA[1]:4,GA[2]:0,GA[3]:4}
     TabB={GB[0]:6,GB[1]:0,GB[2]:3,GB[3]:3}
     TabC={GC[0]:3,GC[1]:6,GC[2]:3,GC[3]:0}
     TabD={GD[0]:4,GD[1]:1,GD[2]:3,GD[3]:1}
