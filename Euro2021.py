@@ -28,7 +28,7 @@ def main():
     TabC={GC[0]:6,GC[1]:9,GC[2]:3,GC[3]:0}
     TabD={GD[0]:7,GD[1]:4,GD[2]:3,GD[3]:1}
     TabE={GE[0]:1,GE[1]:5,GE[2]:7,GE[3]:3}
-    TabF={GF[0]:5,GF[1]:3,GF[2]:4,GF[3]:2}
+    TabF={GF[0]:5,GF[1]:4,GF[2]:4,GF[3]:2}
 
     #Phase Finale
     TabFinal=[]
@@ -56,13 +56,26 @@ def main():
 
     #3eme
     TabFinal.append(list(Tab_A.items())[2])
+    TabFinal.append(list(Tab_D.items())[2])
     TabFinal.append(list(Tab_F.items())[2])
+    TabFinal.append(list(Tab_C.items())[2])
     print ()
-    print (TabFinal)
+#    print (TabFinal)
 
     #Phase Finale
     PhaseFinale = Tableau(TabFinal)
-    print (PhaseFinale)
+#    print (PhaseFinale)
+
+    #8eme de final
+    print ()
+    print (PhaseFinale[1], " vs ", PhaseFinale[3])
+    print (PhaseFinale[0], " vs ", PhaseFinale[5])
+    print (PhaseFinale[4], " vs ", PhaseFinale[13])
+    print (PhaseFinale[2], " vs ", PhaseFinale[14])
+    print (PhaseFinale[7], " vs ", PhaseFinale[9])
+    print (PhaseFinale[10], " vs ", PhaseFinale[12])
+    print (PhaseFinale[6], " vs ", PhaseFinale[11])
+    print (PhaseFinale[8], " vs ", PhaseFinale[15])
 
 if __name__=="__main__":
     main()
