@@ -27,8 +27,8 @@ def main():
     TabB={GB[0]:9,GB[1]:3,GB[2]:3,GB[3]:3}
     TabC={GC[0]:6,GC[1]:9,GC[2]:3,GC[3]:0}
     TabD={GD[0]:7,GD[1]:4,GD[2]:3,GD[3]:1}
-    TabE={GE[0]:1,GE[1]:2,GE[2]:4,GE[3]:3}
-    TabF={GF[0]:4,GF[1]:3,GF[2]:3,GF[3]:1}
+    TabE={GE[0]:1,GE[1]:5,GE[2]:7,GE[3]:3}
+    TabF={GF[0]:5,GF[1]:3,GF[2]:4,GF[3]:2}
 
     #Phase Finale
     TabFinal=[]
