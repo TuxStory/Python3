@@ -59,7 +59,6 @@ def main():
     TabFinal.append(list(Tab_D.items())[2])
     TabFinal.append(list(Tab_F.items())[2])
     TabFinal.append(list(Tab_C.items())[2])
-    print ()
 #    print (TabFinal)
 
     #Phase Finale
