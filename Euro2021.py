@@ -76,6 +76,9 @@ def main():
     print (PhaseFinale[6], " vs ", PhaseFinale[11])
     print (PhaseFinale[8], " vs ", PhaseFinale[15])
 
+    PhaseFinale.remove("Pays de Galles")
+    PhaseFinale.remove("Autriche")
+
 if __name__=="__main__":
     main()
 
