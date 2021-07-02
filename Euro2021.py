@@ -76,6 +76,15 @@ def main():
     print (PhaseFinale[6], " vs ", PhaseFinale[11])
     print (PhaseFinale[8], " vs ", PhaseFinale[15])
 
+    print ("1/4 de finale")
+    print ("Espagne vs Suisse")
+    print ("Belgique vs Italie")
+    print ("Ukraine vs Angleterre")
+    print ("Rep. Tchèque vs Danemark")
+
+    print ("1/2 finale")
+    print ("Espagne vs Italie")
+
     PhaseFinale.remove("Pays de Galles")
     PhaseFinale.remove("Autriche")
     PhaseFinale.remove("Pays-Bas")
@@ -84,6 +93,9 @@ def main():
     PhaseFinale.remove("France")
     PhaseFinale.remove("Allemagne")
     PhaseFinale.remove("Suède")
+    PhaseFinale.remove("Suisse")
+    PhaseFinale.remove("Belgique")
+
     print (PhaseFinale)
 
 if __name__=="__main__":
