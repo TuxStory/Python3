@@ -13,5 +13,7 @@
 			"path": "../LPIC_Notes"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"workbench.colorTheme": "Monokai Dimmed"
+	}
 }
