@@ -19,7 +19,7 @@ def main():
     GB=["Belgique","Danemark","Finlande","Russie"]
     GC=["Autriche","Pays-Bas","Ukraine","Macédoine du Nord"]
     GD=["Angleterre","Croatie","Rep. Tchèque","Ecosse"]
-    GE=["Plogne","Espagne","Suède","Slovaquie"]
+    GE=["Pologne","Espagne","Suède","Slovaquie"]
     GF=["France","Allemagne","Portugal","Hongrie"]
 
     #Score
@@ -76,14 +76,17 @@ def main():
     print (PhaseFinale[6], " vs ", PhaseFinale[11])
     print (PhaseFinale[8], " vs ", PhaseFinale[15])
 
+    print ()
     print ("1/4 de finale")
     print ("Espagne vs Suisse")
     print ("Belgique vs Italie")
     print ("Ukraine vs Angleterre")
     print ("Rep. Tchèque vs Danemark")
 
+    print ()
     print ("1/2 finale")
     print ("Espagne vs Italie")
+    print ("Angleterre vs Danemark")
 
     PhaseFinale.remove("Pays de Galles")
     PhaseFinale.remove("Autriche")
@@ -95,6 +98,8 @@ def main():
     PhaseFinale.remove("Suède")
     PhaseFinale.remove("Suisse")
     PhaseFinale.remove("Belgique")
+    PhaseFinale.remove("Ukraine")
+    PhaseFinale.remove("Rep. Tchèque")
 
     print (PhaseFinale)
 
