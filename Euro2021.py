@@ -100,7 +100,8 @@ def main():
     PhaseFinale.remove("Belgique")
     PhaseFinale.remove("Ukraine")
     PhaseFinale.remove("Rep. Tchèque")
-
+    PhaseFinale.remove("Espagne")
+    PhaseFinale.remove("Danemark")
     print (PhaseFinale)
 
 if __name__=="__main__":
