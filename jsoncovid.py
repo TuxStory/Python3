@@ -37,7 +37,6 @@ print ("Date : ",Date)
 print ("Total Décès : ",Total)
 print ("Total Soin Intensif :",UCI)
 
-#ancienne méthode pour la date 
+#ancienne méthode pour la date
 #for i in data2:
 #    Date = i['DATE']
-
