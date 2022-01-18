@@ -33,3 +33,16 @@ print("Indice élément min :",np.argmin(F))
 print("Valeur :",F[np.argmin(F)])
 print(np.sum(F))
 print(np.prod(F))
+
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.concatenate((arr1, arr2))
+print(arr)
+
+arr = np.array([1, 2, 3, 4, 5, 4, 4])
+x = np.where(arr == 4)
+print(x)
+
+E = np.sort(E)
+print(E)
+
