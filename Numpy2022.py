@@ -74,3 +74,14 @@ print(L)
 
 #You can save it as “filename.npy” with:
 #np.save('filename', a)
+
+print("Attention")
+M = [1,2,3,4]
+N = [5,6,4,6]
+O =  M + N
+print("O:",O)
+
+P = np.array([1,2,3,4])
+Q = np.array([5,6,4,6])
+R = P + Q
+print('R:',R)
