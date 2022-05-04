@@ -20,8 +20,8 @@ femme = list()
 for j in range(10):
 	femme.append(humanity.human("Eva",(j),"Femme","20","Belgique"))
 	femme[j].affiche()
-#	femme[j].vivant()
-#	femme[j].patrie()
+	femme[j].vivant()
+	femme[j].patrie()
 
 print ("--------------------------------------------")
 
