@@ -24,7 +24,9 @@ def analyse(phrase):
 
 def main():
 	os.system("clear")
-	print ("TEXT".center(30,"="))
+	print ("="*30)
+	print ("TEXT".center(30," "))
+	print ("="*30)
 	Q = input(bcolors.BOLD+"Entrez une Phrase: "+bcolors.ENDC)
 	analyse(Q)
 
