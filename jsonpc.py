@@ -5,4 +5,4 @@ with open('JsonParkTest.json') as f:
 
 #print(data)
 for i in data:
-    print (i["ID"],i["Model"])
+    print (i["ID"],i["Model"],"Processeur:",i["Processeur"],"IP:",i["IP"])
