@@ -14,15 +14,19 @@ def difpoid(poids,POIDS):
     DIFF = abs(poids - POIDS) #abs() valeur absolue
     return DIFF
 
+# Presentation
 print("="*30)
 print("IMC".center(30))
 print("="*30,"\n")
+# Données
 Taille = input("Votre taille en mètre [ex 1.67]:")
 Poid = input ("Votre poids en kilos [ex 72.4]:")
+# Calculs
 YOUR_IMC = imc(float(Taille),float(Poid))
 print ("Votre imc est de :",round(YOUR_IMC,2))
 YOUR_BEST_POID = imci(float(Taille),22)
 print ("votre poid ideal devrait être de",round(YOUR_BEST_POID,2),"kg -> iMC = 22.")
-## round(var,decimal) permet d'arrondir un résultat float
+# round(var,decimal) permet d'arrondir un résultat float
 diff_poid = difpoid(float(Poid),float(YOUR_BEST_POID))
 print ("Différence de ",round(diff_poid,2),"kg.")
+
