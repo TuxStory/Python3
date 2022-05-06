@@ -14,6 +14,9 @@ def difpoid(poids,POIDS):
     DIFF = abs(poids - POIDS) #abs() valeur absolue
     return DIFF
 
+print("="*30)
+print("IMC".center(30))
+print("="*30,"\n")
 Taille = input("Votre taille en mètre [ex 1.67]:")
 Poid = input ("Votre poids en kilos [ex 72.4]:")
 YOUR_IMC = imc(float(Taille),float(Poid))
