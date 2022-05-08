@@ -15,7 +15,7 @@ def deco(fonction):
         print("Total :", summ)
     return new_hello
 
-@deco    
+@deco
 def hello(a,b):
     print("Hello world")
     print("A & B :", a , b )
