@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+# Exercice de FutureCoder
+# https://futurecoder.io/
+
 nom = 'World'
 car = ''
 
