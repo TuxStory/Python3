@@ -175,3 +175,71 @@ for mot in choses:
 print(Var)
 
 print("------EX13------")
+choses = ['sur', 'le', 'chemin', 'vers', 'le', 'magasin']
+cible = 'le'
+
+i = 0
+for mot in choses:
+    if mot == cible:
+        print (i)
+        break
+    i += 1
+
+print("------EX14------")
+chaine_1 = 'Hello'
+chaine_2 = 'World'
+
+for i in range(len(chaine_1)):
+    car1 = chaine_1[i]
+    car2 = chaine_2[i]
+    print(car1+ ' ' +car2)
+
+print("------EX15------")
+chaine_1 = 'Goodbye'
+chaine_2 = 'World'
+
+longueur_1 = len(chaine_1)
+longueur_2 = len(chaine_2)
+
+if longueur_1 > longueur_2:
+    long = longueur_1
+else:
+    long = longueur_2
+
+for i in range(long):
+    if i < len(chaine_1):
+        car1 = chaine_1[i]
+    else:
+        car1 = " "
+    
+    if i < len(chaine_2):
+        car2 = chaine_2[i]
+    else:
+        car2 = " "
+
+    print(car1+ ' ' +car2)
+
+print("------EX16------")
+chaine_1 = 'Hello'
+chaine_2 = 'Élisabeth'
+
+longueur_1 = len(chaine_1)
+longueur_2 = len(chaine_2)
+
+if longueur_1 > longueur_2:
+    long = longueur_1
+else:
+    long = longueur_2
+
+for i in range(long):
+    if i < len(chaine_1):
+        car1 = chaine_1[i]
+    else:
+        car1 = " "
+    
+    if i < len(chaine_2):
+        car2 = chaine_2[i]
+    else:
+        car2 = " "
+
+    print(car1+ ' ' +car2)
