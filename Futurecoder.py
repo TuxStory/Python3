@@ -161,3 +161,17 @@ for nombre in nombres:
     if nombre > 5:
         Tab.append(nombre)
 print(Tab)
+
+print("------EX12------")
+choses = ['Ceci', 'est', 'une', 'liste']
+cible = 'est'
+Var = False
+
+for mot in choses:
+    if mot == cible:
+        Var = True
+        break
+
+print(Var)
+
+print("------EX13------")
