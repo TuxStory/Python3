@@ -243,3 +243,24 @@ for i in range(long):
         car2 = " "
 
     print(car1+ ' ' +car2)
+
+print("------EX17------") 
+x = ['a', 'b', 'c']
+x.append(x.pop(0))
+print(x)
+
+print("------EX18------")
+x = ['a', 'b', 'c']
+x[len(x) - 1] = x[0]
+print(x)
+
+print("-----EX19-----")
+x = ['a', 'b', 'c']
+y = x + [x[0]]
+print(y)
+
+print('------EX20------')
+x = [1, 2, 0, 3]
+x.pop(x.index(0))
+print(x)
+
