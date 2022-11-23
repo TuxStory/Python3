@@ -264,3 +264,10 @@ x = [1, 2, 0, 3]
 x.pop(x.index(0))
 print(x)
 
+print('------EX21------')
+print(max([21, 55, 4, 91, 62, 49]))
+
+print('------EX22------')
+nombres = [1, 2, 3, 4, 5]
+nombres.insert(2,9)
+print(nombres)
