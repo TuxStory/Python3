@@ -295,3 +295,20 @@ for lettre in lettres:
                 print(f'{lettre}{lettre2}{lettre3}{lettre4}')
 
 print("------EX26------")
+taille = 5
+longeur = taille
+for i in range(taille):
+    print("+"*taille)
+    taille = taille -1
+
+taille = 5
+longueur = taille
+
+#Deuxième solutiuon attendue 
+for i in range(taille):
+    for j in range(longueur):
+        print("+",end='')
+    print()
+    longueur = longueur - 1
+
+print("------EX27------")
