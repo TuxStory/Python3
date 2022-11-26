@@ -312,3 +312,15 @@ for i in range(taille):
     longueur = longueur - 1
 
 print("------EX27------")
+mot = 'Fabuleux'
+voyelles = []
+consonnes = []
+for lettre in mot:
+    if lettre.lower() in 'aeiouy':
+        voyelles.append(lettre)
+    else:
+        consonnes.append(lettre)
+print(voyelles)
+print(consonnes)
+
+print("------EX28------")
