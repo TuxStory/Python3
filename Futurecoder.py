@@ -279,3 +279,19 @@ for chiffre in range(1,13):
     print('---')
 
 print("------EX24------")
+joueurs = ["Alice","Bob","Carole"]
+for prenom in joueurs:
+    for prenom2 in joueurs:
+        if prenom != prenom2:
+            print(f'{prenom} contre {prenom2}')
+
+
+print("------EX25------")
+lettres = "ABCD"
+for lettre in lettres:
+    for lettre2 in lettres:
+        for lettre3 in lettres:
+            for lettre4 in lettres:
+                print(f'{lettre}{lettre2}{lettre3}{lettre4}')
+
+print("------EX26------")
