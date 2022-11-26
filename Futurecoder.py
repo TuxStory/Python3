@@ -271,3 +271,11 @@ print('------EX22------')
 nombres = [1, 2, 3, 4, 5]
 nombres.insert(2,9)
 print(nombres)
+
+print("------EX23------")
+for chiffre in range(1,13):
+    for nombre in range(1,13):
+        print(f'{chiffre} x {nombre} = {chiffre*nombre}')
+    print('---')
+
+print("------EX24------")
