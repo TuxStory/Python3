@@ -324,3 +324,58 @@ print(voyelles)
 print(consonnes)
 
 print("------EX28------")
+chaines = [
+    [
+        "hello there",
+        "comment allez-vous",
+    ],
+    [
+        "goodbye world",
+        "hello world",
+    ]
+]
+mot = "hello"
+for book in chaines:
+    for phrase in book:
+        if mot in phrase:
+            print(phrase)
+
+print("------EX29------")
+chaines = [
+    [
+        "hello there",
+        "comment allez-vous",
+    ],
+    [
+        "goodbye world",
+        "hello world",
+    ]
+]
+mot = "hello"
+for sous_liste in chaines:
+    cadeau = False
+    for chaine in sous_liste:
+        if mot in chaine:
+            cadeau = True
+    print(cadeau)
+
+print("------EX30------")
+chaines = [
+    [
+        "hello there",
+        "comment allez-vous",
+    ],
+    [
+        "goodbye world",
+        "hello world",
+    ]
+]
+mot = "Python"
+cadeau = False
+for sous_liste in chaines:
+    for chaine in sous_liste:
+        if mot in chaine:
+            cadeau = True
+print(cadeau)
+
+print("-------EX31------")
