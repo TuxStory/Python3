@@ -9,11 +9,23 @@ ENDC = '\033[0m'
 txt = "Wake up, Neo..."
 txt2 = "The Matrix has you...\nFollow the white rabbit.\nKnock, knock, Neo\n"
 txt3 = "(\ /)\n(-.-)\n"
+txt4 = "This is your last chance. After this, there is no turning back.\n"
+"You take the blue pill - the story ends,\n"
+"you wake up in your bed and believe whatever you want to believe.\n"
+"You take the red pill - you stay in Wonderland and I show you how deep the rabbit hole goes.\n"
 
 def flush(txt):
     for i in range(0,len(txt)):
         print(GREEN+txt[i]+ENDC,end="", flush=True)
         time.sleep(0.20)
+
+def trinity():
+    print(GREEN)
+    os.system("nmap -A 192.168.1.1")
+    print(ENDC)
+
+def morpheus():
+    flush(txt4)
 
 def main():
     cursor.hide()
@@ -24,4 +36,10 @@ def main():
     os.system("clear")
     print(txt3)
     cursor.show()
-main()
+    morpheus()
+    os.system("clear")
+#    trinity()
+
+
+if __name__=="__main__":
+    main()
