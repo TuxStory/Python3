@@ -14,6 +14,7 @@ txt4 = """This is your last chance. After this, there is no turning back.\n
 You take the blue pill - the story ends,
 you wake up in your bed and believe whatever you want to believe.
 You take the red pill - you stay in Wonderland and I show you how deep the rabbit hole goes."""
+txt5 = "Ignorance is a bliss\n"
 
 def flush(txt):
     for i in range(0,len(txt)):
@@ -27,6 +28,9 @@ def trinity():
 
 def morpheus():
     flush(txt4)
+
+def cypher():
+    flush(txt5)
 
 def browser():
     os.system("firefox --version")
@@ -44,6 +48,7 @@ def main():
     morpheus()
     os.system("clear")
     browser()
+    cypher()
 #    trinity()
 
 if __name__=="__main__":
