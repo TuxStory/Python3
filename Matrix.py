@@ -5,14 +5,15 @@ import os, time, cursor
 #Colors
 GREEN = '\033[92m'
 ENDC = '\033[0m'
+
 #Texte
 txt = "Wake up, Neo..."
 txt2 = "The Matrix has you...\nFollow the white rabbit.\nKnock, knock, Neo\n"
 txt3 = "(\ /)\n(-.-)\n"
-txt4 = "This is your last chance. After this, there is no turning back.\n"
-"You take the blue pill - the story ends,\n"
-"you wake up in your bed and believe whatever you want to believe.\n"
-"You take the red pill - you stay in Wonderland and I show you how deep the rabbit hole goes.\n"
+txt4 = """This is your last chance. After this, there is no turning back.\n
+You take the blue pill - the story ends,
+you wake up in your bed and believe whatever you want to believe.
+You take the red pill - you stay in Wonderland and I show you how deep the rabbit hole goes."""
 
 def flush(txt):
     for i in range(0,len(txt)):
@@ -27,6 +28,10 @@ def trinity():
 def morpheus():
     flush(txt4)
 
+def browser():
+    os.system("firefox --version")
+    #os.system("chromium --version")
+
 def main():
     cursor.hide()
     os.system("clear")
@@ -38,8 +43,8 @@ def main():
     cursor.show()
     morpheus()
     os.system("clear")
+    browser()
 #    trinity()
-
 
 if __name__=="__main__":
     main()
