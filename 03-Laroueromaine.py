@@ -1,6 +1,6 @@
 # 15 sep 2023 challenge3 AE
 
-import socket, re, codecs
+import socket, re, codecs, os
 
 def main():
     # Connexion à la socket
@@ -15,8 +15,8 @@ def main():
 
     # Trouver la chaîne de carractères
     chaîne_extraite = re.findall(r"'[^']+'", text)
-    print("Chaîne en rot13: ",str(chaîne_extraite))
-    chaîne_extraite=str(chaîne_extraite)
+    print("Chaîne en rot13: ",str(chaîne_extraite[0]))
+    chaîne_extraite=str(chaîne_extraite[0])
     print(type(chaîne_extraite))
 
     # Décoder la chaine en rot13
@@ -25,7 +25,7 @@ def main():
     print(type(Decode))
 
     # Envoi de la réponse
-    message=(str(Decode)+"\n").encode("utf-8")
+    message=str(Decode+"\n").encode("utf-8")
     print(message)
     s.send(message)
 
