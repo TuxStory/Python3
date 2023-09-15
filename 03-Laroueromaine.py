@@ -1,28 +1,32 @@
-# 15 sep 2023 challenge2 AE
+# 15 sep 2023 challenge3 AE
 
-import socket, re, base64
+import socket, re, codecs
 
 def main():
     # Connexion à la socket
     host = "challenge01.root-me.org"
-    port = 52023
+    port = 52021
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((host, port))
 
-    # Réception du message
+    # Réception du messsage
     text=str(s.recv(1024))
+    print(text)
 
     # Trouver la chaîne de carractères
     chaîne_extraite = re.findall(r"'[^']+'", text)
-    print("Chaîne en base64 : ",str(chaîne_extraite))
+    print("Chaîne en rot13: ",str(chaîne_extraite))
+    chaîne_extraite=str(chaîne_extraite)
+    print(type(chaîne_extraite))
 
-    # Décoder la chaine en base64
-    Decode = base64.b64decode(str(chaîne_extraite))
-    Decode = Decode.decode("utf-8")
+    # Décoder la chaine en rot13
+    Decode = codecs.decode(chaîne_extraite, "rot13")
     print("Chaîne décodée : ",Decode)
+    print(type(Decode))
 
     # Envoi de la réponse
     message=(str(Decode)+"\n").encode("utf-8")
+    print(message)
     s.send(message)
 
     # Réception de la réponse

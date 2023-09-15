@@ -37,4 +37,3 @@ def main():
 		if ircmsg.find("PRIVMSG") != -1:
 			name = ircmsg.split('!',1)[0][1:]
 			message = ircmsg.split('PRIVMSG',1)[1].split(':',1)[1]
-			
