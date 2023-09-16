@@ -24,7 +24,8 @@ def main():
 
     # Decode 2lib
     z = zlib.decompress(Decode)
-    print(z)
+    z = z.decode()
+    print("zlib décompressé : ",z)
 
     # Envoi de la réponse
     message=(str(z)+"\n").encode("utf-8")
