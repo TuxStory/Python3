@@ -21,6 +21,7 @@ def main():
 
     # Décoder la chaine en rot13
     Decode = codecs.decode(chaîne_extraite, "rot13")
+    Decode = Decode.strip("'\"")
     print("Chaîne décodée : ",Decode)
     print(type(Decode))
 
