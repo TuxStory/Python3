@@ -5,11 +5,10 @@ from sh import find
 from sh import uname
 # pip3 install sh
 
-#print(sh.clear)
 os.system("clear")
 
-print(sh.ls("-l","/home/antoine",color="auto"))
-print(ifconfig("wlp2s0"))
+print(sh.ls("-l","/home",color="auto"))
+print(ifconfig("wlp3s0"))
 p = find("-name", "test.py", _bg=True)
 print(p)
 kernel = uname("-r")
