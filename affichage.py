@@ -20,6 +20,6 @@ Tab4 = [12, 23.10, 39, 15.5, "rolling", 9.3]
 
 os.system("clear")
 
-Affiche(Users,20,5)
-Affiche2(Tab,Tab2,20,5)
+Affiche(Users,20,3)
+Affiche2(Tab,Tab2,20,3)
 Affiche2(Tab3,Tab4,20,8)
