@@ -14,3 +14,5 @@ for j in range(10):
    for i in Theme:
     print ("\033[1;32m >", i,"Processing ... ",end="\r")
     time.sleep(0.1)
+
+cursor.show()

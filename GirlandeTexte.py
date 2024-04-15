@@ -1,4 +1,7 @@
 import time
+import cursor
+
+cursor.hide()
 
 A = "ILovePython"
 
@@ -7,3 +10,5 @@ for i in range(5):
         print (" "*i,A[i:i+1],end="\r")
         time.sleep(0.2)
         print (" "*(i*2),end="\r")
+
+cursor.show()
