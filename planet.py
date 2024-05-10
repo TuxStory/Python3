@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# version 0.3
+
 class Planet(object):
   def __init__(self, name, typ, order, rayon, distancesol):
     self.name = name
