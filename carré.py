@@ -1,6 +1,12 @@
  #!/usr/python3
  #-*- coding: utf-8  -*-
 
-for i in range(20):
-  print (i,"*",i,"=",i*i)
+def carre():
+  for i in range(1,20):
+    print (i,"*",i,"=",i*i)
 
+def main():
+  print("Table des carrés:")
+  carre()
+
+main()
